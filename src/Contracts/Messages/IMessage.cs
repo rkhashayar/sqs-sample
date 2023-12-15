@@ -1,6 +1,6 @@
 namespace Contracts.Messages;
 
-interface IMessage
+public interface IMessage
 {
     public string MessageTypeName { get; }    
 }

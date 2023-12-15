@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace Contracts.Messages;
 
-class SampleMessage : IMessage
+public class SampleMessage : IMessage
 {
     [JsonPropertyName("id")]
     public Guid Id { get; set; }
