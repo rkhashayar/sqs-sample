@@ -1,4 +1,9 @@
+using Amazon.SQS;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddHostedService<SqsServices>();
+builder.Services.AddSingleton<IAmazonSQS, AmazonSQSClient>();
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

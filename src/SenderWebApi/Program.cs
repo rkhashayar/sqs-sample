@@ -1,5 +1,7 @@
+using System.Dynamic;
 using Amazon.SQS;
 using Contracts.Messages;
+using Microsoft.AspNetCore.Mvc;
 using SenderWebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,14 +22,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.MapPost("/publish", async () =>
+app.MapPost("/publish", async ([FromBody] SampleMessage message) =>
 {
-    var message = new SampleMessage
-    {
-        Id = Guid.NewGuid(),
-        Message = "this is a test",
-        Type = 1
-    };
+    message.Id = Guid.NewGuid();
     var publisher = app.Services
     .GetRequiredService<ISqsPublisher>();
     await publisher.PublishAsync("comp1_queue", message);
