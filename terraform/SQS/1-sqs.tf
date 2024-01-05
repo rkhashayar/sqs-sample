@@ -9,12 +9,12 @@ resource "aws_sqs_queue" "sqs_sample_queue" {
   // dead-letter queue
   redrive_policy = jsonencode({
     "deadLetterTargetArn" = aws_sqs_queue.sqs_sample_dl_queue.arn
-"maxReceiveCount" = var.recieve_count
+    "maxReceiveCount" = var.recieve_count
   })
 }
 
 resource "aws_sqs_queue" "sqs_sample_dl_queue" {
-   name = "${var.queue_name}-dl"
+  name = "${var.queue_name}-dl"
   message_retention_seconds = var.retention_period
   visibility_timeout_seconds = var.visibility_timeout
 }

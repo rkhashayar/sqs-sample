@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReceiverWebApi", "src\SQS\R
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SenderWebApi", "src\SQS\SenderWebApi\SenderWebApi.csproj", "{2A4C9AD3-4206-44DE-84D3-C627B46457C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUploadWebApi", "src\S3\FileUploadWebApi\FileUploadWebApi.csproj", "{22EF09F2-D8F5-4E56-A61C-81CEEB9EC84B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2A4C9AD3-4206-44DE-84D3-C627B46457C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A4C9AD3-4206-44DE-84D3-C627B46457C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A4C9AD3-4206-44DE-84D3-C627B46457C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22EF09F2-D8F5-4E56-A61C-81CEEB9EC84B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22EF09F2-D8F5-4E56-A61C-81CEEB9EC84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22EF09F2-D8F5-4E56-A61C-81CEEB9EC84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22EF09F2-D8F5-4E56-A61C-81CEEB9EC84B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{0A8E8BEA-57C8-4CED-83E4-00F64323954B} = {D1C16404-4EE2-49C2-8FDE-021AB922D9D1}
 		{769195A9-D4F1-44B7-A27D-44697BD14179} = {D1C16404-4EE2-49C2-8FDE-021AB922D9D1}
 		{2A4C9AD3-4206-44DE-84D3-C627B46457C3} = {D1C16404-4EE2-49C2-8FDE-021AB922D9D1}
+		{22EF09F2-D8F5-4E56-A61C-81CEEB9EC84B} = {9BA30220-74F2-4D6B-8C08-DD3DFDCA3645}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {210A2288-9423-451C-810C-890F31B6DC0A}
