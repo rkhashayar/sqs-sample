@@ -1,5 +1,5 @@
 # Resources
-[AWS Services](https://youtu.be/FDEpdNdFglI?si=nKP6TLBHhPKbbFUi)
+[AWS Services](https://youtu.be/FDEpdNdFglI?si=jiF7XpqQoxbzWe4J)
 # DNC
 ## AWS
 ### Route 53 
@@ -80,6 +80,10 @@
 # Network Boundary
 ## AWS
 ### VPC (Virtual Private Cloud)
+# AI
+## AWS
+### Amazon Bedrock
+https://youtu.be/ab1mbj0acDo?si=2Qjdmm7tr1b0MQHC
 
 
 
